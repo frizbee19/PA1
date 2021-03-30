@@ -41,4 +41,99 @@ To push the current branch and set the remote as upstream, use
 
     git push --set-upstream https://github.com/frizbee19/PA1 master
 
-]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git push https://github.com/frizbee19/PA1  master[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C https://github.com/frizbee19/PA1 master[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C- https://github.com/frizbee19/PA1 mas
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git push https://github.com/frizbee19/PA1  master[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C https://github.com/frizbee19/PA1 master[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C- https://github.com/frizbee19/PA1 master[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C- https://github.com/frizbee19/PA1 master[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[Cs https://github.com/frizbee19/P[1@A[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[Ce https://github.com/frizbee19/[1@P[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[Ct https://github.com/frizbee19[1@/[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C- https://github.com/frizbee1[1@9[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu https://github.com/frizbee[1@1[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp https://github.com/frizbe[1@e[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs https://github.com/frizb[C[1@e[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct https://github.com/friz[1@b[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr https://github.com/fri[1@z[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce https://github.com/fr[1@i[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca https://github.com/f[1@r[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm https://github.com/[1@f[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+error: src refspec master does not match any
+[31merror: failed to push some refs to 'https://github.com/frizbee19/PA1'
+[m]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git commit -m I[K'Initial Commit'
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mPA_GitHub.typescript[m
+	[31mPA_makefiles.typescript[m
+	[31mmain.cpp[m
+	[31mmain.o[m
+	[31mmakefile.pa1[m
+	[31mpa1[m
+	[31mversion.cpp[m
+	[31mversion.o[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git add README
+fatal: pathspec 'README' did not match any files
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git add README[K[K[K[K[K[K*
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ st[K[Kgit status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   PA_GitHub.typescript[m
+	[32mnew file:   PA_makefiles.typescript[m
+	[32mnew file:   main.cpp[m
+	[32mnew file:   main.o[m
+	[32mnew file:   makefile.pa1[m
+	[32mnew file:   pa1[m
+	[32mnew file:   version.cpp[m
+	[32mnew file:   version.o[m
+
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git status[1Padd *READMEcommit -m 'Initial Commit'
+[master (root-commit) 2c122f0] Initial Commit
+ 8 files changed, 927 insertions(+)
+ create mode 100644 PA_GitHub.typescript
+ create mode 100644 PA_makefiles.typescript
+ create mode 100644 main.cpp
+ create mode 100644 main.o
+ create mode 100644 makefile.pa1
+ create mode 100755 pa1
+ create mode 100644 version.cpp
+ create mode 100644 version.o
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git remote add origin httpsL[K://github.com/f rizbee19/PA1.git
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git branch -M main
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git push -u origin main
+Username for 'https://github.com': frizbee19
+Password for 'https://frizbee19@github.com': 
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
+Compressing objects:  10% (1/10)Compressing objects:  20% (2/10)Compressing objects:  30% (3/10)Compressing objects:  40% (4/10)Compressing objects:  50% (5/10)Compressing objects:  60% (6/10)Compressing objects:  70% (7/10)Compressing objects:  80% (8/10)Compressing objects:  90% (9/10)Compressing objects: 100% (10/10)Compressing objects: 100% (10/10), done.
+Writing objects:  10% (1/10)Writing objects:  20% (2/10)Writing objects:  40% (4/10)Writing objects:  50% (5/10)Writing objects:  60% (6/10)Writing objects:  70% (7/10)Writing objects:  80% (8/10)Writing objects:  90% (9/10)Writing objects: 100% (10/10)Writing objects: 100% (10/10), 28.40 KiB | 1.49 MiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), done.[K
+To https://github.com/frizbee19/PA1.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git remote stau[K[K[K[Korigin status
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/frizbee19/PA1.git
+  Push  URL: https://github.com/frizbee19/PA1.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ touch main.cpp
+]0;friz
