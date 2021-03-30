@@ -1,0 +1,44 @@
+Script started on 2021-03-29 20:09:36-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ echo "i h[K[K already created a repo for PA1
+> exit
+> Z=[K[Kbash: unexpected EOF while looking for matching `"'
+bash: syntax error: unexpected end of file
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ echo "i already created a repo for PA1
+exit
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxit[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./pa1[1Pexitcho "i already created a repo for PA1
+exit
+[A[C[C[C[C"
+i already created a repo for PA1
+exit
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mPA_GitHub.typescript[m
+	[31mPA_makefiles.typescript[m
+	[31mmain.cpp[m
+	[31mmain.o[m
+	[31mmakefile.pa1[m
+	[31mpa1[m
+	[31mversion.cpp[m
+	[31mversion.o[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git push https://github.com/frizbee19/PA1  mas[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K1  master
+error: src refspec master does not match any
+[31merror: failed to push some refs to 'https://github.com/frizbee19/PA1'
+[m]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git push https://github.com/frizbee19/PA1 master[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[Cstatus[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush https://github.com/frizbee19/PA1 master[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/frizbee19/PA1 master
+
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ git push https://github.com/frizbee19/PA1  master[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C https://github.com/frizbee19/PA1 master[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ [C[C[C[C[C[C[C[C[C- https://github.com/frizbee19/PA1 mas

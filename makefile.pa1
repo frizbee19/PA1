@@ -1,0 +1,8 @@
+pa1: main.o version.o
+	g++ main.o version.o -o pa1
+
+main.o: main.cpp
+	g++ -c main.cpp
+
+version.o: version.cpp
+	g++ -c version.cpp

@@ -1,0 +1,640 @@
+Script started on 2021-03-29 19:34:18-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ cat main[K[K[K[Kmakefile.pa1 
+pa1: main.o
+	g++ main.o -o pa1
+
+main.o: main.cpp
+	g++ -c main.cpp
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ make -f makefile.pa1 
+g++ -c main.cpp
+g++ main.o -o pa1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ touch main.cpp
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ touch main.cppmake -f makefile.pa1 
+g++ -c main.cpp
+g++ main.o -o pa1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ cd ..
+]0;frizbee@frizbee-VirtualBox: ~/PA[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA[00m$ cd PA02
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ cat makefile.pa2 
+pa2: disp.o cnt.o
+	g++ cnt.o disp.o -o pa2
+
+disp.o: filedisp/main.cpp
+	g++ -c filedisp/main.cpp
+
+cnt.o: filecnt/main.cpp
+	g++ -c filecnt/main.cpp
+
+
+
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ make make[K[K[K[K-f makefile.pa2 
+g++ -c filedisp/main.cpp
+g++ -c filecnt/main.cpp
+[01m[Kfilecnt/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kfilecnt/main.cpp:6:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilesystem[m[K’ is not a namespace-name
+    6 |     namespace fs = std::[01;31m[Kfilesystem[m[K;
+      |                         [01;31m[K^~~~~~~~~~[m[K
+[01m[Kfilecnt/main.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfs[m[K’ has not been declared
+   17 |         [01;31m[Kfs[m[K::recursive_directory_iterator rdi(og);
+      |         [01;31m[K^~[m[K
+[01m[Kfilecnt/main.cpp:18:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krdi[m[K’ was not declared in this scope
+   18 |         for(auto& dir : [01;31m[Krdi[m[K){
+      |                         [01;31m[K^~~[m[K
+[01m[Kfilecnt/main.cpp:19:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kfs[m[K’ has not been declared
+   19 |             if([01;31m[Kfs[m[K::is_directory(dir.path())) {
+      |                [01;31m[K^~[m[K
+[01m[Kfilecnt/main.cpp:24:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kfs[m[K’ has not been declared
+   24 |                     bytes += [01;31m[Kfs[m[K::file_size(dir.path());
+      |                              [01;31m[K^~[m[K
+make: *** [makefile.pa2:8: cnt.o] Error 1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ cd
+]0;frizbee@frizbee-VirtualBox: ~[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~[00m$ cd DO[Kownloads/
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ cat pa02.typescript 
+Script started on 2021-03-13 22:49:27-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ script wk07_shell_scripting_exercises.typescript[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_Sob[Cll_Lab8.1.typescript[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ cd[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l wk06data*[5Pcd mydata/ls -l wk06data*script wk06_RE_and_textprocessing_exercises.typescript[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./directory.sh /usr/sbin[6Pdogls[K./directory.sh /home/frizbee/ /Downloads/[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [24Pvi directory.sh 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./directory.sh wk06datahome/frizbee/[12Pvi directory.sh ./directory.sh home/frizbee/[12Pvi directory.sh ./directory.sh home/frizbee/[6Pchmod +x directory.sh [6Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6@chmod +x[C[C[C[C[C[C[C[C[C[C[C[C[C[C./directory.sh home/frizbee/[12Pvi directory.sh ./directory.sh home/frizbee/[12Pvi directory.sh ./directory.sh home/frizbee/[5Pwk06data[7Pvi directory.sh ./directory.sh /home/frizbee/ /Downloads/[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./directory.sh dog/usr/sbinexit[Kscript wk06_RE_and_textprocessing_exercises.typescript[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [25Pls -l wk06data*
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pcd mydata/ls -l wk06data*cd[Kscript wk07_shell_scripting_exercises_Sobell_Lab8.1.typescript[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.typ[Cscript[K[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript wk07_shell_scripting_exercises.typescript[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_Sob[Cll_Lab8.1.typescript[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ cd[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l wk06data*cd[Kscript wk07_shell_scripting_exercises_Sobell_Lab8.1.typescript[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.typ[Cscript[K[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript wk07_shell_scripting_exercises.typescript[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg++-9 -std=c++-9[K[K17 fd.cpp filedisp
+/usr/bin/ld: filedisp: _ZSt3cin: invalid version 3 (max 0)
+/usr/bin/ld: filedisp: error adding symbols: bad value
+collect2: error: ld returned 1 exit status
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ g++-9 -std=c++17 fd.cpp filedisp[C-filedispofiledisp filedisp
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ cat main.cpp
+#include<iostream>
+#include <filesystem>
+
+using namespace std;
+int main(int argc, char** argv) {
+    namespace fs = std::filesystem;
+
+    if(argc > 2) {
+        throw std::invalid_argument( "Invalid amount of arguments" );
+    }
+
+    string og = argv[1];
+    //if(fs::exists(og)) {
+        unsigned long bytes = 0;
+        unsigned int files = 0;
+        unsigned int dirs = 0;
+        fs::recursive_directory_iterator rdi(og);
+        for(auto& dir : rdi){
+            if(fs::is_directory(dir.path())) {
+                dirs++;
+            } else {
+                files++;
+                try {
+                    bytes += fs::file_size(dir.path());
+                }
+                catch(...){
+
+                }
+            }
+        }
+        cout << "The total amount of directories in directory" << og << " is: " << dirs << endl;
+    cout << "The total amount of files in directory" << og << " is: " << files << endl;
+    cout << "The total amount of bytes occupied by files in directory" << og << " is: " << bytes << endl;
+    //} //else {
+        //throw std::invalid_argument("file path does not exist");
+    //}
+
+
+
+
+    return 0;
+}]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ cat main.cppg++-9 -std=c++17 fd.cpp -o filedisp[C[1P[1P[1@m[1@a[1@i[1@n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kcnt
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ./filecnt /home/frizbee/Downloads
+The total amount of directories in directory/home/frizbee/Downloads is: 1
+The total amount of files in directory/home/frizbee/Downloads is: 13
+The total amount of bytes occupied by files in directory/home/frizbee/Downloads is: 154599
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ./filecnt /home/frizbee/Downloads | ./fi ledisp -d
+The total amount of directories in directory/home/frizbee/Downloads is: 1
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ./filecnt /home/frizbee/Downloads | ./filedisp -d[Kf
+The total amount of files in directory/home/frizbee/Downloads is: 13
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ./filecnt /home/frizbee/Downloads | ./filedisp -f[Kb
+The total amount of bytes occupied by files in directory/home/frizbee/Downloads is: 158695
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ./filecnt /home/frizbee/Downloads | ./filedisp -b[Kg
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  invalid option
+Aborted (core dumped)
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ./filecnt /home/frizbee/Downloads | ./filedisp -g[K[K[K
+you should try one of the options: -d -f -b
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ./filecnt /home/frizbee/Downloads | ./filedisp -gbfdfbg[K -g[Kd[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | ./file[1P[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | ./filed[1P[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | ./filedi[1P[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | ./filedis[1P[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | ./filedisp[1P -d[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | ./filedisp [1P-d[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | ./filedisp -[1Pd[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | ./filedisp -d[K[A]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | ./filedisp -d [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@u[1@s[1@r[1@/[1@s[1@h[1@a[1@r[1@e
+The total amount of directories in directory/usr/share is: 11902
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ./filecnt /usr/share | ./filedisp -d[Kf
+The total amount of files in directory/usr/share is: 202676
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ ./filecnt /usr/share | ./filedisp -f[Kb
+The total amount of bytes occupied by files in directory/usr/share is: 2413118322
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ exit
+exit
+
+Script done on 2021-03-13 22:53:14-06:00 [COMMAND_EXIT_CODE="0"]
+]0;frizbee@frizbee-VirtualBox: ~/Downloads[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/Downloads[00m$ cd
+]0;frizbee@frizbee-VirtualBox: ~[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~[00m$ cd PA/PA02
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ vi makefile.pa2 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"makefile.pa2" 11 lines, 149 characters[1;1Hpa2: disp.o cnt.o[2;9Hg++ cnt.o disp.o -o pa2
+
+disp.o: filedisp/main.cpp[5;9Hg++ -c filedisp/main.cpp
+
+cnt.o: filecnt/main.cpp[8;9Hg++ -c filecnt/main.cpp[12;1H[94m~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[2;8H
+
+[5;8H[m [24;1H[?2004l[24;1H[K[24;1H[?2004l[?1l>[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ ^C
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ vi makefile.pa2 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"makefile.pa2" 11 lines, 149 characters[1;1Hpa2: disp.o cnt.o[2;9Hg++ cnt.o disp.o -o pa2
+
+disp.o: filedisp/main.cpp[5;9Hg++ -c filedisp/main.cpp
+
+cnt.o: filecnt/main.cpp[8;9Hg++ -c filecnt/main.cpp[12;1H[94m~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[2;8H
+
+[5;8H[m g++[4;1H[5;8H g++[?2004l[>4;m[?25l- -c filedisp/main.cpp[5;13H[?25h[?25l9 -c filedisp/main.cpp[5;14H[?25h[?25l  -c filedisp/main.cpp[5;15H[?25h[?25l- -c filedisp/main.cpp[5;16H[?25h[?25ls -c filedisp/main.cpp[5;17H[?25h[?25lt -c filedisp/main.cpp[5;18H[?25h[?25ld -c filedisp/main.cpp[5;19H[?25h[?25l= -c filedisp/main.cpp[5;20H[?25h[?25lc -c filedisp/main.cpp[5;21H[?25h[?25l+ -c filedisp/main.cpp[5;22H[?25h[?25l+ -c filedisp/main.cpp[5;23H[?25h[?25l1 -c filedisp/main.cpp[5;24H[?25h[?25l7 -c filedisp/main.cpp[5;25H[?25h[?2004h[>4;2m
+[7;23H[8;24H[?2004l[>4;m[?25l- -c filecnt/main.cpp[8;13H[?25h[?25l9 -c filecnt/main.cpp[8;14H[?25h[?25l  -c filecnt/main.cpp[8;15H[?25h[?25l- -c filecnt/main.cpp[8;16H[?25h[?25ls -c filecnt/main.cpp[8;17H[?25h[?25lt -c filecnt/main.cpp[8;18H[?25h[?25ld -c filecnt/main.cpp[8;19H[?25h[?25l= -c filecnt/main.cpp[8;20H[?25h[?25lc -c filecnt/main.cpp[8;21H[?25h[?25l+ -c filecnt/main.cpp[8;22H[?25h[?25l+ -c filecnt/main.cpp[8;23H[?25h[?25l1 -c filecnt/main.cpp[8;24H[?25h[?25l7 -c filecnt/main.cpp[8;25H[?25h[?2004h[>4;2m[?2004l[?25l[24;16H[K[24;16H11 lines, 175 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ Z[Kmake mak[K[K[K-f makefile.pa2 
+g++-9 -std=c++17 -c filedisp/main.cpp
+g++-9 -std=c++17 -c filecnt/main.cpp
+g++ cnt.o disp.o -o pa2
+[01m[Kg++:[m[K [01;31m[Kerror: [m[Kcnt.o: No such file or directory
+[01m[Kg++:[m[K [01;31m[Kerror: [m[Kdisp.o: No such file or directory
+[01m[Kg++:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+make: *** [makefile.pa2:2: pa2] Error 1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ vi makefile.pa2 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"makefile.pa2" 11 lines, 175 characters[1;1Hpa2: disp.o cnt.o[2;9Hg++ cnt.o disp.o -o pa2
+
+disp.o: filedisp/main.cpp[5;9Hg++-9 -std=c++17 -c filedisp/main.cpp
+
+cnt.o: filecnt/main.cpp[8;9Hg++-9 -std=c++17 -c filecnt/main.cpp[12;1H[94m~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[2;8H[m g++[1;1Hpa2: disp.[?25l.o cnt.o[1;14H[K[1;6H[?25h[?25lo cnt.o[1;13H[K[1;6H[?25h[?25lcnt.o[1;11H[K[1;6H[?25h[?25l.o[1;8H[K[1;6H[?25h[?25lo[1;7H[K[1;6H[?25h[2;9H[1;6H [?25l[1;6H[K[1;5H[?25h[?2004l[>4;m[?25l [?25h[?25lf[?25h[?25li[?25h[?25ll[?25h[?25le[?25h[?25ld[?25h[?25li[?25h[?25ls[?25h[?25lp[?25h[?25l/[?25h[?25lm[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25l.[?25h[?25lc[?25h[?25lp[?25h[?25lp[?25h[?25l [?25h[?25lf[?25h[?25li[?25h[?25ll[?25h[?25le[?25h[?25lc[?25h[?25ln[?25h[?25lt[?25h[?25l/[?25h[?25lm[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25l.[?25h[?25lc[?25h[?25lp[?25h[?25lp[?25h[?2004h[>4;2m[2;31H
+[4;25H[5;39H[4;25H[?25l[4;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;1H[K[4;9H[?25h[?25l[4;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [4;1H[?25h[?25l[4;23r[m[23;1H
+[1;24r[23;1H[94m~                                                                               [4;1H[?25h[?25l[4;23r[m[23;1H
+[1;24r[23;1H[94m~                                                                               [4;9H[?25h[?25l[4;23r[m[23;1H
+[1;24r[23;1H[94m~                                                                               [4;1H[?25h[3;1H[2;8H[m g++[?2004l[>4;m[?25l- cnt.o disp.o -o pa2[2;13H[?25h[?25l9 cnt.o disp.o -o pa2[2;14H[?25h[?25l  cnt.o disp.o -o pa2[2;15H[?25h[?25l- cnt.o disp.o -o pa2[2;16H[?25h[?25ls cnt.o disp.o -o pa2[2;17H[?25h[?25lt cnt.o disp.o -o pa2[2;18H[?25h[?25ld cnt.o disp.o -o pa2[2;19H[?25h[?25l= cnt.o disp.o -o pa2[2;20H[?25h[?25lc cnt.o disp.o -o pa2[2;21H[?25h[?25l+ cnt.o disp.o -o pa2[2;22H[?25h[?25l+ cnt.o disp.o -o pa2[2;23H[?25h[?25l1 cnt.o disp.o -o pa2[2;24H[?25h[?25l7 cnt.o disp.o -o pa2[2;25H[?25h[?2004h[>4;2m7 cnt.o disp.o -o pa[?2004l[?25l[24;1H"makefile.pa2" 6 lines, 83 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ cat makefile.pa2 
+pa2: filedisp/main.cpp filecnt/main.cpp 
+	g++-9 -std=c++17 cnt.o disp.o -o pa2
+
+
+
+
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ cat makefile.pa2 [1Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kmake mak[K[K[K-f makefile.pa2 
+g++-9 -std=c++17 cnt.o disp.o -o pa2
+[01m[Kg++-9:[m[K [01;31m[Kerror: [m[Kcnt.o: No such file or directory
+[01m[Kg++-9:[m[K [01;31m[Kerror: [m[Kdisp.o: No such file or directory
+[01m[Kg++-9:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+make: *** [makefile.pa2:2: pa2] Error 1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ make -f makefile.pa2 [4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"makefile.pa2" 6 lines, 83 characters[1;1Hpa2: filedisp/main.cpp filecnt/main.cpp[2;9Hg++-9 -std=c++17 cnt.o disp.o -o pa2[7;1H[94m~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[2;8H[m g++-9 -std=c++17 [?25l.o disp.o -o pa2[2;42H[K[2;26H[?25h[?25lo disp.o -o pa2[2;41H[K[2;26H[?25h[?25ldisp.o -o pa2[2;39H[K[2;26H[?25h[?25l.o -o pa2[2;36H[K[2;26H[?25h[?25lo -o pa2[2;34H[K[2;26H[?25h[?25l-o pa2[2;32H[K[2;26H[?25h[?2004l[>4;m[?25l -o pa2[?25h[?2004h[>4;2m[?2004l[>4;m[?25lf -o pa2[2;27H[?25h[?25li -o pa2[2;28H[?25h[?25ll -o pa2[2;29H[?25h[?25le -o pa2[2;30H[?25h[?25lc -o pa2[2;31H[?25h[?25ln -o pa2[2;32H[?25h[?25lt -o pa2[2;33H[?25h[?25l/ -o pa2[2;34H[?25h[?25lm -o pa2[2;35H[?25h[?25la -o pa2[2;36H[?25h[?25li -o pa2[2;37H[?25h[?25ln -o pa2[2;38H[?25h[?25l. -o pa2[2;39H[?25h[?25lc -o pa2[2;40H[?25h[?25lp -o pa2[2;41H[?25h[?25lp -o pa2[2;42H[?25h[?25l  -o pa2[2;43H[?25h[?25lf -o pa2[2;44H[?25h[?25li -o pa2[2;45H[?25h[?25ll -o pa2[2;46H[?25h[?25le -o pa2[2;47H[?25h[?25ld -o pa2[2;48H[?25h[?25li -o pa2[2;49H[?25h[?25ls -o pa2[2;50H[?25h[?25lp -o pa2[2;51H[?25h[?25l/ -o pa2[2;52H[?25h[?25lm -o pa2[2;53H[?25h[?25la -o pa2[2;54H[?25h[?25li -o pa2[2;55H[?25h[?25ln -o pa2[2;56H[?25h[?25l. -o pa2[2;57H[?25h[?25lc -o pa2[2;58H[?25h[?25lp -o pa2[2;59H[?25h[?25lp -o pa2[2;60H[?25h[?2004h[>4;2m[?2004l[?25l[24;16H[K[24;16H6 lines, 105 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ vi makefile.pa2 [5@make -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@make -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+pa2: filedisp/main.cpp filecnt/main.cpp 
+	g++-9 -std=c++17 filecnt/main.cpp filedisp/main.cpp -o pa2
+
+
+
+
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ cat makefile.pa2 [1Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcat makefile.pa2 [1Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@make -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++-9 -std=c++17 filecnt/main.cpp filedisp/main.cpp -o pa2
+/usr/bin/ld: /tmp/cccW4bdN.o: in function `main':
+main.cpp:(.text+0x0): multiple definition of `main'; /tmp/ccT5q2VN.o:main.cpp:(.text+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [makefile.pa2:2: pa2] Error 1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ vi makefile.pa2 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"makefile.pa2" 6 lines, 105 characters[1;1Hpa2: filedisp/main.cpp filecnt/main.cpp[2;9Hg++-9 -std=c++17 filecnt/main.cpp filedisp/main.cpp -o pa2[7;1H[94m~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[mpa2: filedisp/main.cpp filecnt/main.c[?25l.cpp filecnt/main.cpp [1;37H[K[1;15H[?25h[?2004l[>4;m[?25ld.cpp filecnt/main.cpp[1;16H[?25h[?25li.cpp filecnt/main.cpp[1;17H[?25h[?25ls.cpp filecnt/main.cpp[1;18H[?25h[?25lp.cpp filecnt/main.cpp[1;19H[?25h[?2004h[>4;2m[?2004l[?25l[24;16H[K[24;16H6 lines, 105 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ vi makefile.pa2 [5@make -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++-9 -std=c++17 filecnt/main.cpp filedisp/main.cpp -o pa2
+[01m[Kg++-9:[m[K [01;31m[Kerror: [m[Kfiledisp/main.cpp: No such file or directory
+make: *** [makefile.pa2:2: pa2] Error 1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ make -f makefile.pa2 [5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@make -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++-9 -std=c++17 filecnt/main.cpp filedisp/main.cpp -o pa2
+[01m[Kg++-9:[m[K [01;31m[Kerror: [m[Kfiledisp/main.cpp: No such file or directory
+make: *** [makefile.pa2:2: pa2] Error 1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ make -f makefile.pa2 [5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@make -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"makefile.pa2" 6 lines, 105 characters[1;1Hpa2: filedisp/disp.cpp filecnt/main.cpp[2;9Hg++-9 -std=c++17 filecnt/main.cpp filedisp/main.cpp -o pa2[7;1H[94m~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[mpa2: filedisp/disp[2;19H=c++17 filecnt/main.cpp filedisp/main.cm[?25l.cpp -o pa2[2;64H[K[2;52H[?25h[?25l.maincpp -o pa2[2;56H[?25h[?25l-o pa2[2;59H[K[2;53H[?25h[?25l-o pa2[2;58H[K[2;52H[?25h[?2004l[>4;m[?25ld-o pa2[?25h[?25li-o pa2[?25h[?25ls-o pa2[?25h[?25lp-o pa2[?25h[?25l.-o pa2[?25h[?25lc-o pa2[?25h[?25lp-o pa2[?25h[?25lp-o pa2[?25h[?25l -o pa2[?25h[?2004h[>4;2m[?2004l[?25l[24;16H[K[24;16H6 lines, 105 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ vi makefile.pa2 [5@make -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++-9 -std=c++17 filecnt/main.cpp filedisp/disp.cpp -o pa2
+/usr/bin/ld: /tmp/ccmS4Stn.o: in function `main':
+disp.cpp:(.text+0x0): multiple definition of `main'; /tmp/ccY4L1Fl.o:main.cpp:(.text+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [makefile.pa2:2: pa2] Error 1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ echo "i[Kit is having trouble compiling so I  will [K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kdue t o how i made [K[K[K[K[K[K[KI made PA02 so I wll [K[K[K[Kill [K[K[K[Kwill just move on"[A[21Pmake -f makefile.pa2 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "it is having trouble compiling due to how I made PA02 so I will just move on"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CNit is having trouble compiling due t[1@o[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ [C[C[C[C[C[C[COit is having trouble compiling due [1@t[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ [C[C[C[C[C[C[C[CTit is having trouble compiling due[1@ [A]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ [C[C[C[C[C[C[C[C[CEit is having trouble compiling du[1@e[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ [C[C[C[C[C[C[C[C[C[C:it is having trouble compiling d[1@u[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ [C[C[C[C[C[C[C[C[C[C[C it is having trouble compiling [1@d[A]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ [C[C[C[C[C[C[C[C[C[C[C[C
+
+NOTE: it is having trouble compiling due to how I made PA02 so I will just move on
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ cd >>
+bash: syntax error near unexpected token `newline'
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA02[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA02[00m$ cd ..
+]0;frizbee@frizbee-VirtualBox: ~/PA[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA[00m$ cd PA01
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ vi version.cpp
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"version.cpp" [New File][2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?2004l[>4;m[?25l[ms[?25h[?25lt[?25h[?25la[?25h[?25lt[?25h[?25li[?25h[?25lc[?25h[?25l [?25h[?25lS[?25h[?25lt[?25h[?25lr[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?2004h[>4;2m[?25l[1;8H[K[1;7H[?25h[?25l[?25h[?2004l[>4;m[?2004h[>4;2mi[?2004l[>4;mc[?25l [?25h[?25ls[?25h[?25lt[?25h[?25ld[?25h[?25l:[?25h[?25l:[?25h[?25ls[?25h[?25lt[?25h[?25lr[?25h[?25li[?25h[?25ln[?25h[?25lg[?25h[?25l [?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25lf[?25h[?25ll[?25h[?25lo[?25h[?25la[?25h[?25lt[?25h[?25l [?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l [?25h[?25l=[?25h[?25l [?25h[?25l1[?25h[?25l.[?25h[?25l2[?25h[?25l;[?25h[?25l[2;1H[K[2;1H[?25h[?25l[3;1H[K[3;1H[?25h[?2004h[>4;2m[2;1H[1;1H[?2004l[>4;m[?25l[1;23r[1;1H[L[1;24r[24;1H[K[1;1H[?25h[?25l#[?25h[?25li[?25h[?25ln[?25h[?25lc[?25h[?25le[?25h[?25l[?25h[?25ll[?25h[?25lu[?25h[?25ld[?25h[?25le[?25h[?25l [?25h[?25l<[?25h[?25ls[?25h[?25lt[?25h[?25lr[?25h[?25li[?25h[?25ln[?25h[?25lg[?25h[?25l>[?25h[?2004h[>4;2m[2;17H
+
+[?2004l[>4;m[?25lv[?25h[?25lo[?25h[?25li[?25h[?25ld[?25h[?25l [?25h[?25ld[?25h[?25li[?25h[?25ls[?25h[?25lp[?25h[?25ll[?25h[?25la[?25h[?25ly[?25h[?25lV[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l([?25h[?25l)[?25h[?25l{[?25h[?25l[5;1H[K[5;1H[?25h[?25l[8C[?25h[?25lc[?25h[?25lo[?25h[?25lu[?25h[?25lt[?25h[?25l [?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25ls[?25h[?25lt[?25h[?25ld[?25h[?25l:[?25h[?25l:[?25h[?25lc[?25h[?25lo[?25h[?25lu[?25h[?25lt[?25h[?25l [?25h[?25l<[?25h[?25l<[?25h[?25l [?25h[?25l"[?25h[?2004h[>4;2m[4;22H[3;1H[4;22H[5;22H[?2004l[>4;m"[?25lC[?25h[?25lu[?25h[?25lr[?25h[?25lr[?25h[?25le[?25h[?25ln[?25h[?25lt[?25h[?25l [?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l [?25h[?25li[?25h[?25ls[?25h[?25l [?25h[?25l"[?25h[?25l [?25h[?25l<[?25h[?25l<[?25h[?25l [?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l [?25h[?25l<[?25h[?25l<[?25h[?25l [?25h[?25ls[?25h[?25lt[?25h[?25ld[?25h[?25l.[?25h[?25l[?25h[?25l:[?25h[?25l:[?25h[?25le[?25h[?25ln[?25h[?25ld[?25h[?25ll[?25h[?25l;[?25h[?25l[6;1H[K[6;1H[?25h[?25l}[?25h[?2004h[>4;2m[?2004l[?25l[24;1H"version.cpp" [New File] 6 lines, 133 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ g++ version.cpp
+[01m[Kversion.cpp:[m[K In function ‘[01m[Kvoid displayVersion()[m[K’:
+[01m[Kversion.cpp:5:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ is not a member of ‘[01m[Kstd[m[K’
+    5 |  std::[01;31m[Kcout[m[K << "Current version is " << version << std::endl;
+      |       [01;31m[K^~~~[m[K
+[01m[Kversion.cpp:2:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+    1 | #include <string>
+  +++ |+[32m[K#include <iostream>[m[K
+    2 | static float version = 1.2;
+[01m[Kversion.cpp:5:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ is not a member of ‘[01m[Kstd[m[K’
+    5 |  std::cout << "Current version is " << version << std::[01;31m[Kendl[m[K;
+      |                                                        [01;31m[K^~~~[m[K
+[01m[Kversion.cpp:2:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ is defined in header ‘[01m[K<ostream>[m[K’; did you forget to ‘[01m[K#include <ostream>[m[K’?
+    1 | #include <string>
+  +++ |+[32m[K#include <ostream>[m[K
+    2 | static float version = 1.2;
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ g++ version.cpp[1Pvi[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"version.cpp" 6 lines, 133 characters[1;1H#include <string>
+static float version = 1.2;
+
+void displayVersion(){[5;9Hstd::cout << "Current version is " << version << std::endl;
+}
+[94m~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[?2004l[>4;m[?25l[1;23r[m[1;1H[L[1;24r[24;1H[K[1;1H[?25h[?25l#[?25h[?25li[?25h[?25ln[?25h[?25lc[?25h[?25ll[?25h[?25lu[?25h[?25ld[?25h[?25le[?25h[?25l [?25h[?25l<[?25h[?25lo[?25h[?25ls[?25h[?25lt[?25h[?25lr[?25h[?25le[?25h[?25la[?25h[?25lm[?25h[?25l>[?25h[?2004h[>4;2m[?2004l[?25l[24;1H"version.cpp" 7 lines, 152 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ vi version.cpp[1@g++[C[C[C[C[C[C[C[C[C[C[C[C
+[01m[Kversion.cpp:[m[K In function ‘[01m[Kvoid displayVersion()[m[K’:
+[01m[Kversion.cpp:6:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ is not a member of ‘[01m[Kstd[m[K’
+    6 |  std::[01;31m[Kcout[m[K << "Current version is " << version << std::endl;
+      |       [01;31m[K^~~~[m[K
+[01m[Kversion.cpp:2:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+    1 | #include <ostream>
+  +++ |+[32m[K#include <iostream>[m[K
+    2 | #include <string>
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ g++ version.cpp[1Pvi[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"version.cpp" 7 lines, 152 characters[1;1H#include <ostream>
+#include <string>
+static float version = 1.2;
+
+void displayVersion(){[6;9Hstd::cout << "Current version is " << version << std::endl;
+}
+[94m~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?25l[1;23r[m[1;1H[L[1;24r[24;1H[K[1;1H[?25h[?25l#[?25h[?25li[?25h[?25ln[?25h[?25lc[?25h[?25ll[?25h[?25li[?25h[?25l[?25h[?25lu[?25h[?25ld[?25h[?25le[?25h[?25l [?25h[?25l<[?25h[?25li[?25h[?25lo[?25h[?25ls[?25h[?25lt[?25h[?25lr[?25h[?25le[?25h[?25la[?25h[?25lm[?25h[?25l>[?25h[?2004h[>4;2m[?2004l[?25l[24;1H"version.cpp" 8 lines, 172 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ vi version.cpp[1@g++[C[C[C[C[C[C[C[C[C[C[C[C
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ vi makefile.pa1 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"makefile.pa1" 5 lines, 66 characters[1;1Hpa1: main.o[2;9Hg++ main.o -o pa1
+
+main.o: main.cpp[5;9Hg++ -c main.cpp
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[mpa1: main.[?2004l[>4;mo[?25l [?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l.[?25h[?25lo[?25h[?2004h[>4;2m[2;21H
+[4;16H[5;21Hcp[?2004l[>4;mp[?25l[6;1H[K[6;1H[?25h[?25l[7;1H[K[7;1H[?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l.[?25h[?25lo[?25h[?25l:[?25h[?25l [?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l.[?25h[?25lc[?25h[?25lp[?25h[?25lp[?25h[?25l[8;1H[K[8;1H[?25h[?25l[8C[?25h[?25lg[?25h[?25l+[?25h[?25l+[?25h[?25l [?25h[?25l-[?25h[?25lc[?25h[?25l [?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l.[?25h[?25lc[?25h[?25lp[?25h[?25lp[?25h[?2004h[>4;2m[7;22H[6;1H[5;23H[4;16H[3;1H[2;25H[?2004l[>4;m[?25lv-o pa1[?25h[?25le-o pa1[?25h[?25lr-o pa1[?25h[?25ls-o pa1[?25h[?25li-o pa1[?25h[?25lo-o pa1[?25h[?25ln-o pa1[?25h[?25l -o pa1[?25h[?25l[?25h[?25l.[?25h[?25lo-o pa1[?25h[?25l -o pa1[?25h[?2004h[>4;2m[?2004l[?25l[24;16H[K[24;16H8 lines, 130 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ vi main.cpp
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"main.cpp" [Incomplete last line] 222 lines, 7611 characters[1;1H//Rizvee Ayub RNA180002
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+//organizes check function
+enum Part { Protocol, Host, Port };
+
+//used to check for valid url input
+const string PROT [4] = {"http", "https", "ftp", "ftps"};
+const string HOST [5] = {"com", "net", "edu", "biz", "gov"};
+const int PORTMAX = 65535;
+const string FILEEND [2] = {".html", ".htm"};
+
+//checks each part of the url
+bool check(Part, string, int, int);
+
+int main() {
+    //a check to make sure that the program doesnt print information when there''[22;1Hs an error
+    bool error = false;[1;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[?2004l[>4;m[?25l[17;23r[17;1H[L[1;24r[24;1H[K[17;1H[?25h[?25l[18;23r[18;1H[L[1;24r[23;1H[94m@                                                                               [18;1H[?25h[?2004h[>4;2m[17;1H[?2004l[>4;m[?25l[ms[?25h[?25lt[?25h[?25la[?25h[?25lt[?25h[?25li[?25h[?25lc[?25h[?25l [?25h[?25lf[?25h[?25ll[?25h[?25lo[?25h[?25la[?25h[?25lt[?25h[?25l [?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25li[?25h[?25ls[?25h[?25lo[?25h[?25ln[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l [?25h[?25l1[?25h[?25l.[?25h[?25l2[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l=[?25h[?25l [?25h[?25l1[?25h[?25l.[?25h[?25l2[?25h[?25l;[?25h[?25l[18;23r[18;1H[L[1;24r[18;1H[?25h[?25l[19;23r[19;1H[L[1;24r[19;1H[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[19;23r[19;1H[L[1;24r[19;1HB[?25h[?2004h[>4;2m
+
+
+
+[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1HB[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H//checks each part of the url[?25h[?25l[1;23r[23;1H
+[1;24r[23;1Hbool check(Part, string, int, int);[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;1Hint main() {[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5H//a check to make sure that the program doesnt print information when there''[23;1Hs an error[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hbool error = false;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//ask for user input[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hstring url = "";[?25h[22;1H[21;1H[19;1H[18;1H[17;1H[16;1H[15;1H[14;1H[13;1H[12;1H[11;1H[10;1H
+
+
+[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[2;1H[1;1H[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1HB[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hstatic float version = 1.2;[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst string FILEEND [2] = {".html", ".htm"};[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst int PORTMAX = 65535;[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst string HOST [5] = {"com", "net", "edu", "biz", "gov"};[?25h
+
+
+
+
+
+
+
+
+[9;1H[8;1H[7;1H[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1HB[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1H//checks each part of the url[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1Hbool check(Part, string, int, int);[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;1Hint main() {[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5H//a check to make sure that the program doesnt print information when there'[23;1H[94m@                                                                               [7;1H[?25h[?25l[7;23r[m[23;1H
+[1;24r[22;1H    //a check to make sure that the program doesnt print information when there''[23;1Hs an error[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5Hbool error = false;[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5H//ask for user input[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5Hstring url = "";[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5Hstring output = "";[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5Hcout << "Enter a url here: " << endl;[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5Hcin >> url;[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5H//read until after protocol[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5Hint end = url.find("//:");[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5Hint start = 0;[7;1H[?25h[?25l[7;23r[23;1H
+[1;24r[23;5H//check if protocol exists[7;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[?25l[1;23r[23;1H
+[1;24r[23;5Hif(end == string::npos) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hcout << "Invalid URL:\nProtocol:\tdoes not exist." << endl;[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Herror = true;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H} else {[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H//check if protocol matches[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hif(check(Protocol, url, start, end)) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;13Houtput += "Protocol:\t" + url.substr(start, end - start) + "\n";[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Helse {[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H//output error if no match[?25h[?25l[1;23r[1;1H[3M[1;24r[21;13Hcout << "Invalid URL:\nProtocol:\t" << url.substr(start, end - startt[22;1H) << " protocol does not exist" << endl;[23;13Herror = true;[21;1H[?25h
+
+[?25l[1;23r[23;1H
+[1;24r[23;9H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//move the beginning to domain[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hif(end != string::npos) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hurl = url.substr(end + 3);[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//assume '/' is end of domain[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hend = url.find("/");[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hif(end == string::npos)[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H{[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H//if no '/', end of domain set to end of url[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hend = url.length();[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//if there is ':', assume that is the end of domain[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hif(url.find(":") != string::npos)[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H{[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hend = url.find(":");[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//check if domain is valid[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hif(check(Host, url, start, end)){[?25h[?25l[1;23r[1;1H[2M[1;24r[22;9Houtput += "Domain:\t\t" + url.substr(start, end - start) + "\n";
+    } else {[22;1H[?25h
+[?25l[1;23r[23;1H
+[1;24r[23;9H//output error if not valid[?25h[?25l[1;23r[1;1H[2M[1;24r[22;9Hcout << "Invalid URL:\nDomain:\t" << url.substr(start, end - start) << ""[23;1H invalid domain name." << endl;[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Herror = true;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//check if port exists[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hif(url.find(":") != string::npos) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H//move beginning, + 1 to make it int[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hurl = url.substr(url.find(":") + 1);[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H//assume '/' is end of port[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hend = url.find("/");[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hif(end == string::npos)[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H{[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H//if no '/', end of domain set to end of url[?25h[?25l[1;23r[23;1H
+[1;24r[23;13Hend = url.length() - 1;[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H//check if port is an integer[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hif(check(Port, url, start, end)) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;13Houtput += "Port:\t" + url.substr(start, end - start) + "\n";[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H} else {[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H//error output[?25h[?25l[1;23r[1;1H[2M[1;24r[22;13Hcout << "Invalid URL:\nPort:\t" << url.substr(start, end - start) <<<[23;1H " invalid port number." << endl;[22;1H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;13Herror = true;[23;9H}[22;1H[?25h
+[?25l[1;23r[23;1H
+[1;24r[23;5H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//move the beginning to file path[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hif(end != string::npos) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hurl = url.substr(end);[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//stop parameter if file path is empty[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hbool endPar = false;[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5H//check if there is file path, or if there is no filepath at all, it is still[23;1Hl valid[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hif(url[0] == '/' || url.length() == 0){[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H//if only '/' or blank, still valid[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hif(url.length() > 1) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H//check for valid ".html"[?25h[?25l[1;23r[23;1H
+[1;24r[23;13Hif (url.find(FILEEND[0]) != string::npos) {[?25h[?25l[1;23r[1;1H[2M[1;24r[22;17Hif (url.find(FILEEND[0]) + 5 == url.length() || url[url.find(FILL[23;1HEEND[0]) + 5] == '?') {[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;21Hend = url.find(FILEEND[0]) + 5;[?25h[?25l[1;23r[1;1H[2M[1;24r[22;21Houtput += "File Path:\t" + url.substr(start, end - start) +  [23;1H"\n";[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;17H} else {[?25h[?25l[1;23r[23;1H
+[1;24r[23;21H//error if character after html not '?'[?25h[?25l[1;23r[1;1H[2M[1;24r[22;21Hcout << "Invalid URL:\nFile Path:\tInvalid file path closuree[23;1H." << endl;[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;21Herror = true;[?25h[?25l[1;23r[23;1H
+[1;24r[23;17H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H} else if (url.find(FILEEND[1]) != string::npos) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;17H//check for valid ".htm"[?25h[?25l[1;23r[1;1H[2M[1;24r[22;17Hif (url.find(FILEEND[1]) + 4 == url.length() || url[url.find(FILL[23;1HEEND[1]) + 4] == '?') {[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;21Hend = url.find(FILEEND[1]) + 4;[?25h[?25l[1;23r[1;1H[2M[1;24r[22;21Houtput += "File Path:\t" + url.substr(start, end - start) +  [23;1H"\n";[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;17H} else {[?25h[?25l[1;23r[23;1H
+[1;24r[23;21H//error if character after htm not '?'[?25h[?25l[1;23r[1;1H[2M[1;24r[22;21Hcout << "Invalid URL:\nFile Path:\tInvalid file path closuree[23;1H." << endl;[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;21Herror = true;[?25h[?25l[1;23r[1;1H[2M[1;24r[22;17H}[?25h
+[?25l[1;23r[23;1H
+[1;24r[23;13H} else {[?25h[?25l[1;23r[1;1H[2M[1;24r[22;17H//error if does not end with either html or htm[23;17Hcout << "Invalid URL:\nFile Path:\tInvalid file path." << endl;[22;1H[?25h
+[?25l[1;23r[23;1H
+[1;24r[23;17Herror = true;[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H}[?25h[?25l[1;23r[1;1H[2M[1;24r[22;9H} else {[23;13HendPar = true;[22;1H[?25h
+[?25l[1;23r[23;1H
+[1;24r[23;9H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H} else {[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hcout << "Invalid URL:\nFile Path:\tdoes not exist." << endl;[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Herror = true;[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5H}[?25h
+[?25l[1;23r[23;1H
+[1;24r[23;5H//check parameter if everything else is valid[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5Hif(!endPar) {[23;9H//checks if '?' is in string, optional[22;1H[?25h
+[?25l[1;23r[23;1H
+[1;24r[23;9Hif(url.find("?") != string::npos){[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H//move beginning of url[?25h[?25l[1;23r[1;1H[2M[1;24r[22;13Hurl = url.substr(url.find("?"));[23;13H//makes sure format is right[22;1H[?25h
+[?25l[1;23r[1;1H[2M[1;24r[22;13Hif(url.length() > 1 && url.find("=") != string::npos && url.find("=""[23;1H) != 1 && url.find("=") != url.length() - 1) {[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;17Houtput += "Parameters:\t" + url.substr(1) + "\n";[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;13Helse[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H{[?25h[?25l[1;23r[23;1H
+[1;24r[23;17H//output error[?25h[?25l[1;23r[1;1H[2M[1;24r[22;17Hcout << "Invalid URL:\nParameters:\tInvalid parameter format" <<<[23;1H endl;[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;17Herror = true;[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//prints info if everything is valid[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hif(!error)[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H{[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hcout << output << endl;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hreturn 0;[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;1H[?25h[?25l[1;23r[1;1H[2M[1;24r[22;1Hbool check(Part part, string url, int start, int end) {
+    //for checking if domain is divided correctly[22;1H[?25h
+[?25l[1;23r[23;1H
+[1;24r[23;5Hint count = 0;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//for checking port validity[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hbool isInt = true;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//isolates the element[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hstring segment = url.substr(start, end - start);[?25h[?25l[1;23r[1;1H[2M[1;24r[22;5Hbool check = false;
+    //checks based on the type of element[22;1H[?25h
+[?25l[1;23r[23;1H
+[1;24r[23;5Hswitch (part) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hcase Protocol:[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H//loops through list of calid protocols for check[?25h[?25l[1;23r[23;1H
+[1;24r[23;13Hfor(int i = 0; i < 4; i++) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;17Hif (segment == PROT[i])[?25h[?25l[1;23r[23;1H
+[1;24r[23;21Hcheck = true;[?25h[?25l[1;23r[23;1H
+[1;24r[23;13H}[?25h[?25l[1;23r[23;1H
+[1;24r[23;13Hbreak;[?25h[22;1H[21;1H[20;1H[19;1H[18;1H[17;1H[16;1H[15;1H[14;1H[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[2;1H[1;1H[?25l[1;23r[1;1H[L[1;24r[1;5H{[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(!error)[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//prints info if everything is valid[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;17Herror = true;[?25h[?25l[1;23r[1;1H[2L[1;24r[1;17Hcout << "Invalid URL:\nParameters:\tInvalid parameter format" <<<[2;1H endl;[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;17H//output error[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H{[?25h[?25l[1;23r[1;1H[L[1;24r[1;13Helse[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;17Houtput += "Parameters:\t" + url.substr(1) + "\n";[?25h[?25l[1;23r[1;1H[2L[1;24r[1;13Hif(url.length() > 1 && url.find("=") != string::npos && url.find("=""[2;1H) != 1 && url.find("=") != url.length() - 1) {[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H//makes sure format is right[?25h[?25l[1;23r[1;1H[L[1;24r[1;13Hurl = url.substr(url.find("?"));[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H//move beginning of url[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hif(url.find("?") != string::npos){[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H//checks if '?' is in string, optional[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(!endPar) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//check parameter if everything else is valid[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Herror = true;[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hcout << "Invalid URL:\nFile Path:\tdoes not exist." << endl;[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H} else {[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;13HendPar = true;[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H} else {[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;13H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;17Herror = true;[?25h[?25l[1;23r[1;1H[L[1;24r[1;17Hcout << "Invalid URL:\nFile Path:\tInvalid file path." << endl;[?25h[?25l[1;23r[1;1H[L[1;24r[1;17H//error if does not end with either html or htm[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H} else {[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;17H}[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;21Herror = true;[?25h[?25l[1;23r[1;1H[2L[1;24r[1;21Hcout << "Invalid URL:\nFile Path:\tInvalid file path closuree[2;1H." << endl;[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;21H//error if character after htm not '?'[?25h[?25l[1;23r[1;1H[L[1;24r[1;17H} else {[?25h[?25l[1;23r[1;1H[2L[1;24r[1;21Houtput += "File Path:\t" + url.substr(start, end - start) +  [2;1H"\n";[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;21Hend = url.find(FILEEND[1]) + 4;[?25h[?25l[1;23r[1;1H[2L[1;24r[1;17Hif (url.find(FILEEND[1]) + 4 == url.length() || url[url.find(FILL[2;1HEEND[1]) + 4] == '?') {[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;17H//check for valid ".htm"[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H} else if (url.find(FILEEND[1]) != string::npos) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;17H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;21Herror = true;[?25h[?25l[1;23r[1;1H[2L[1;24r[1;21Hcout << "Invalid URL:\nFile Path:\tInvalid file path closuree[2;1H." << endl;[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;21H//error if character after html not '?'[?25h[?25l[1;23r[1;1H[L[1;24r[1;17H} else {[?25h[?25l[1;23r[1;1H[2L[1;24r[1;21Houtput += "File Path:\t" + url.substr(start, end - start) +  [2;1H"\n";[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;21Hend = url.find(FILEEND[0]) + 5;[?25h[?25l[1;23r[1;1H[2L[1;24r[1;17Hif (url.find(FILEEND[0]) + 5 == url.length() || url[url.find(FILL[2;1HEEND[0]) + 5] == '?') {[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;13Hif (url.find(FILEEND[0]) != string::npos) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H//check for valid ".html"[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;9Hif(url.length() > 1) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H//if only '/' or blank, still valid[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(url[0] == '/' || url.length() == 0){[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H//check if there is file path, or if there is no filepath at all, it is still[2;1Hl valid[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hbool endPar = false;[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//stop parameter if file path is empty[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hurl = url.substr(end);[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(end != string::npos) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//move the beginning to file path[?25h[?25l[1;23r[1;1H[L[1;24r[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;5H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;13Herror = true;[?25h[?25l[1;23r[1;1H[2L[1;24r[1;13Hcout << "Invalid URL:\nPort:\t" << url.substr(start, end - start) <<<[2;1H " invalid port number." << endl;[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H//error output[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H} else {[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;13Houtput += "Port:\t" + url.substr(start, end - start) + "\n";[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hif(check(Port, url, start, end)) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H//check if port is an integer[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;13Hend = url.length() - 1;[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H//if no '/', end of domain set to end of url[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H{[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;9Hif(end == string::npos)[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hend = url.find("/");[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H//assume '/' is end of port[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hurl = url.substr(url.find(":") + 1);[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H//move beginning, + 1 to make it int[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(url.find(":") != string::npos) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//check if port exists[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Herror = true;[?25h[?25l[1;23r[1;1H[2L[1;24r[1;9Hcout << "Invalid URL:\nDomain:\t" << url.substr(start, end - start) << ""[2;1H invalid domain name." << endl;[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H//output error if not valid[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;5H} else {[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Houtput += "Domain:\t\t" + url.substr(start, end - start) + "\n";[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(check(Host, url, start, end)){[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//check if domain is valid[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hend = url.find(":");[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H{[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(url.find(":") != string::npos)[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//if there is ':', assume that is the end of domain[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hend = url.length();[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H//if no '/', end of domain set to end of url[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H{[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(end == string::npos)[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hend = url.find("/");[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//assume '/' is end of domain[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hurl = url.substr(end + 3);[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(end != string::npos) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//move the beginning to domain[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H}[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;9H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;13Herror = true;[?25h[?25l[1;23r[1;1H[2L[1;24r[1;13Hcout << "Invalid URL:\nProtocol:\t" << url.substr(start, end - startt[2;1H) << " protocol does not exist" << endl;[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;13H//output error if no match[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Helse {[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H}[?25h[?25l[1;23r[1;1H[L[1;24r[1;13Houtput += "Protocol:\t" + url.substr(start, end - start) + "\n";[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hif(check(Protocol, url, start, end)) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;9H//check if protocol matches[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H} else {[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Herror = true;[?25h[?25l[1;23r[1;1H[L[1;24r[1;9Hcout << "Invalid URL:\nProtocol:\tdoes not exist." << endl;[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hif(end == string::npos) {[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//check if protocol exists[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hint start = 0;[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hint end = url.find("//:");[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//read until after protocol[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hcin >> url;[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hcout << "Enter a url here: " << endl;[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hstring output = "";[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hstring url = "";[?25h[?25l[1;23r[1;1H[L[1;24r[1;5H//ask for user input[?25h[?25l[1;23r[1;1H[L[1;24r[1;5Hbool error = false;[?25h[?25l[1;23r[1;1H[2L[1;24r[1;5H//a check to make sure that the program doesnt print information when there''[2;1Hs an error[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1Hint main() {[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hbool check(Part, string, int, int);[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H//checks each part of the url[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hstatic float version = 1.2;[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst string FILEEND [2] = {".html", ".htm"};[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst int PORTMAX = 65535;[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst string HOST [5] = {"com", "net", "edu", "biz", "gov"};[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst string PROT [4] = {"http", "https", "ftp", "ftps"};[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H//used to check for valid url input[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Henum Part { Protocol, Host, Port };[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H//organizes check function[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Husing namespace std;[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H#include <string>[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H#include <iostream>[?25h[?25l[1;23r[1;1H[L[1;24r[23;1H[94m@                                                                               [1;1H[?25h[?25l[1;23r[m[1;1H[L[1;24r[1;1H//Rizvee Ayub RNA180002[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[?25l[1;23r[1;1H[2M[1;24r[22;5H//a check to make sure that the program doesnt print information when there''[23;1Hs an error[22;1H[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hbool error = false;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//ask for user input[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hstring url = "";[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hstring output = "";[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hcout << "Enter a url here: " << endl;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hcin >> url;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//read until after protocol[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hint end = url.find("//:");[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hint start = 0;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H//check if protocol exists[?25h[?25l[1;23r[23;1H
+[1;24r[23;5Hif(end == string::npos) {[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hcout << "Invalid URL:\nProtocol:\tdoes not exist." << endl;[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Herror = true;[?25h[?25l[1;23r[23;1H
+[1;24r[23;5H} else {[?25h[?25l[1;23r[23;1H
+[1;24r[23;9H//check if protocol matches[?25h[?25l[1;23r[23;1H
+[1;24r[23;9Hif(check(Protocol, url, start, end)) {[?25h[22;1H[21;1H[20;1H[19;1H[18;1H[17;1H[16;1H[15;1H[14;1H[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[6;1H[5;1H[4;1H[3;1H[2;1H[1;1H[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hstatic float version = 1.2;[?25h[?25l[1;23r[1;1H[L[1;24r[1;1H[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst string FILEEND [2] = {".html", ".htm"};[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst int PORTMAX = 65535;[?25h[?25l[1;23r[1;1H[L[1;24r[1;1Hconst string HOST [5] = {"com", "net", "edu", "biz", "gov"};[?25h
+
+
+
+
+
+[6;1H[5;1H[4;1H
+
+
+[6;1H[5;1H[4;1H
+
+[?2004l[>4;m[?25l[7;23r[7;1H[L[1;24r[7;1H[?25h[?25lv[?25h[?25lo[?25h[?25li[?25h[?25ld[?25h[?25l [?25h[?25ld[?25h[?25li[?25h[?25ls[?25h[?25lp[?25h[?25ll[?25h[?25la[?25h[?25ly[?25h[?25lV[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l([?25h[?25l)[?25h[?25l [?25h[?25l{[?25h[?25l[8;23r[8;1H[L[1;24r[8;1H[?25h[?25l[8C[?25h[?25lc[?25h[?25lo[?25h[?25lu[?25h[?25lt[?25h[?25l [?25h[?25l<[?25h[?25l<[?25h[?25l [?25h[?25l"[?25h[?25lC[?25h[?25lu[?25h[?25lr[?25h[?25lr[?25h[?25le[?25h[?25ln[?25h[?25lt[?25h[?25l [?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l [?25h[?25li[?25h[?25ls[?25h[?25l"[?25h[?25l [?25h[?25l[?25h[?25l[?25h[?25l [?25h[?25l"[?25h[?25l [?25h[?25l<[?25h[?25l<[?25h[?25l [?25h[?25lv[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l [?25h[?25l<[?25h[?25l<[?25h[?25l [?25h[?25le[?25h[?25ln[?25h[?25ld[?25h[?25ll[?25h[?25l;[?25h[?25l[9;23r[9;1H[L[1;24r[9;1H[?25h[?25l}[?25h[?2004h[>4;2m
+
+
+
+
+int 
+    [?2004l[>4;m[?25l[15;23r[15;1H[L[1;24r[15;1H[?25h[?25l[8C[?25h[?25ld[?25h[?25li[?25h[?25ls[?25h[?25lp[?25h[?25ll[?25h[?25la[?25h[?25ly[?25h[?25lV[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25li[?25h[?25lo[?25h[?25ln[?25h[?25l([?25h[?25l)[?25h[?25l;[?25h[?2004h[>4;2m[?2004l[?25l[24;1H"main.cpp" 229 lines, 7738 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ make makef[K[K[K[K[K[K[K[K[K[Kmake makefile[K[K[K[K[K[K[K[K-f makefile.pa1 
+g++ -c main.cpp
+g++ -c version.cpp
+g++ main.o version.o -o pa1
+/usr/bin/ld: version.o: in function `displayVersion()':
+version.cpp:(.text+0x0): multiple definition of `displayVersion()'; main.o:main.cpp:(.text+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [makefile.pa1:2: pa1] Error 1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ vi version.cpp 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"version.cpp" 8 lines, 172 characters[1;1H#include <iostream>
+#include <ostream>
+#include <string>
+static float version = 1.2;
+
+void displayVersion(){[7;9Hstd::cout << "Current version is " << version << std::endl;
+}
+[94m~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h
+
+
+
+
+[7;8H[?25l[7;23r[m[23;1H
+[1;24r[23;1H[94m~                                                                               [m[24;1H[K[7;1H[?25h[?25l[94m~                                                                               [6;1H[?25h[mvoid displayVersion()[?25l[6;22H[K[6;21H[?25h[?2004l[>4;m)[?25l;[?25h[?2004h[>4;2m[?2004l[?25l[24;1H"version.cpp" 6 lines, 109 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ vi version.cpp [6@make -f makefile.pa1[C
+g++ -c version.cpp
+g++ main.o version.o -o pa1
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ ./pa1
+Current version is 1.2
+Enter a url here: 
+skdaflj
+Invalid URL:
+Protocol:	does not exist.
+Invalid URL:
+Domain:	skdaflj invalid domain name.
+]0;frizbee@frizbee-VirtualBox: ~/PA/PA01[01;32mfrizbee@frizbee-VirtualBox[00m:[01;34m~/PA/PA01[00m$ exit
+exit
+
+Script done on 2021-03-29 20:00:47-05:00 [COMMAND_EXIT_CODE="0"]
